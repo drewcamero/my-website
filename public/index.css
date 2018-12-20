@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/background21.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; 
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+header {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 5px 5px 5px gray;
+  color: rgb(30, 42, 65);
+	text-align:center;
+  width: auto;
+  background-image: url("images/background.jpg");
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  box-shadow: 2px 2px 2px rgb(100, 82, 121);
+}
+
+footer {
+  text-align:center;
+  color: rgb(36, 49, 73);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(54, 63, 105);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.logo {
+  float: left;
+  margin-left: 200px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 70px;
+  height: 70px;
+}
+
+.before-footer {
+  /* display: none; */
+  /* background-color: rgb(54, 63, 105); */
+  margin-top: 625px;
+  /* padding-bottom: px; */
+  color: #434461;
+  /* box-shadow: 2px 2px 2px rgb(100, 82, 121); */
+}
+
+.content-footer {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.icon2 {
+  position: relative;
+  float: right;
+  width: 130px;
+  height: 130px;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+  float: left;
+  font-size: 1.1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.column-a {
+  border: 0.5px solid black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* float: left; */
+  /* width: 35%; */
+}
+
+.column-b {
+  border: 0.5px solid black;
+  display: flex;
+  float: left;
+  /* width: 65%; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.label {
+  text-align: center;
+}
+
+.info {
+  display: none;
+  /* visibility: hidden; */
+  padding: 10px;
+}
+
+.deck {
+  display: flex;
+  float: left;
+  width: 65%;
+  flex-direction: row;
+  /* flex-flow: row; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  /* transform: rotate(5deg); */
+  transform: rotate(-10deg);
+  width: 240px;
+  color: black;
+  border-radius: 5px;
+  /* box-shadow: px; */
+  /* background: rgb(168, 168, 238); */
+  box-shadow: 3px 3px 1px rgb(100, 82, 121);
+  background: rgb(212, 223, 240);
+  opacity: 0.9;
+  /* border: 0.5px solid #3f3b3b;   */
+  /* padding: 4px; */
+  margin: 10px;
+  margin-bottom: 8px;
+}
+
+.img {
+  width: 239px;
+  height: 100px;
+  opacity: 1;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.card:hover { 
+  /* transform: scale(1.1); */
+  /* transform: rotate(-10deg); */
+  box-shadow: 7px 7px 5px rgb(100, 82, 121);
+  opacity: 1;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.card:hover > .view-img{
+  box-shadow: 7px 7px 5px rgb(100, 82, 121);
+}
+
+.view-img {
+  
+  width:400px;
+  height: 220px;
+  border-radius: 7px;
+}
+
+.viewer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* float: left; */
+  width: 35%;
+}
+
+.column {
+  /* display: flex; */
+  margin: 5px;
+}
+
+.banner {
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+  top: 0;
+  margin-top: 0;
+  text-shadow: 5px 5px 5px gray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* height: 20px; */
+  text-align: center;
+  font-size: 200%;
+  /* background-image: url("images/background-reverse.jpg");  */
+}
+
+.banner-header {
+  color: rgb(149, 149, 255);
+  text-align: center;
+  font-size: 3.2em;
+  /* background-image: linear-gradient(rgb(211, 211, 241),rgb(149, 149, 255), rgb(83, 83, 124),rgb(34, 34, 85),rgb(65, 65, 156),rgb(149, 149, 255),white);  */
+}
+
+.publish-textfield {
+  margin-top: 5px;
+  padding-left: 10px; 
+  width: 25%;
+  height: 35px;
+  background-color: rgb(246, 241, 241);  
+}
+
+.publish-textarea {
+  margin-top: 5px;
+  border-radius: 5px;
+  padding-left: 10px;
+  width: 25%;
+  max-width: 25%;
+  min-width: 25%;
+  height: 80px;
+  min-height: 80px;
+  background-color: rgb(246, 241, 241);
+}
+
+.publish-button{
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(54, 63, 105);
+  border: none;
+  text-decoration: none;
+  width: 80px; 
+  height: 35px;
+}

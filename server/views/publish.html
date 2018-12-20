@@ -1,0 +1,75 @@
+<!-- 
+  Camero, Jan Andrew S.
+-->
+
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>${input.title}Let's Go!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <link rel="stylesheet" type="text/css" href="/index.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>Let's Go!</h1>
+    <p>Have a trip around the world with us.</p>
+  </header>
+
+  <main>
+
+    <div class="topnav">
+      <input type="text" style="padding-left: 8px;float: right; width: 25%; height: 46px; background-color: rgb(246, 241, 241)"
+        placeholder="Search"></input>
+      <a href="/" style="float: left">Home</a>
+    </div>
+
+    <h2 style=" color: rgb(54, 63, 105); text-align:center; margin-top:50px">Publish</h2>
+    <h2 style=" color: rgb(54, 63, 105); text-align:center; margin-top:50px">${input.title}</h2>
+
+    <form class="form" action="/publish" method="POST" style="text-align:center">
+      <div class="form-group">
+        <!-- <label>Name</label> -->
+        <input class= "form-control publish-textfield" input="text" name="name" placeholder="Name"/>
+      </div>
+      <div class="form-group">
+        <!-- <label></label> -->
+        <textarea class="publish-textarea" name="publish" placeholder="publish"></textarea>
+      </div>
+      <div class="form-group ">
+        <button class="btn btn-primary publish-button" type="submit">Submit</button>
+      </div>
+    </form>
+
+    <div class="before-footer">
+      <div class="content-footer">
+        <span style="font-weight:bold">More About the </span>
+        <span style="font-weight:bold; font-style:italic">Let's Go: </span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quia cumque porro fuga fugiat saepe
+          consequuntur utr sit amet, consectetur adipisicing elit. Sint quia cumque porro fuga fugiat saepe
+          consequuntur ut deserunt earum tempora alias quod similique commodi, incidunt tenetur nihil iste. Laboriosam,
+          eos?</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; All rights reserved. Camero | 2018</p>
+  </footer>
+</body>
+
+<div class="card-again">
+  <div class="card-image">
+
+  </div>
+  <div class="card-body">
+
+  </div>
+  <div class="card-footer">
+
+  </div>
+</div>
+
+</html>
